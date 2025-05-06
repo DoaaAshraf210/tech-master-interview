@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "tailwindcss -i ./src/styles/input.css -o ./public/output.css --watch"
+    "build": "tailwindcss -i ./src/styles/input.css -o ./public/output.css --minify"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17"
