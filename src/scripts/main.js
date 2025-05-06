@@ -13,7 +13,6 @@ document.querySelectorAll(".with-slider").forEach((container) => {
   const nextBtn = container.querySelector("button#next-btn");
   function getCardWidth() {
     const firstCard = slider.querySelector(".card");
-    console.log(firstCard);
     return firstCard ? firstCard.getBoundingClientRect().width + 24 : 0;
   }
 
