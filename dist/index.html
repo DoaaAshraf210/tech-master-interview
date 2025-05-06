@@ -1,0 +1,2096 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <head>
+      <div class="bg-black text-white flex py-3">
+        <div class="container block md:flex items-center justify-between">
+          <p class="flex-1 lg:ml-28">
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+            <a
+              href="#"
+              class="inline-flex md:ml-3 underline decoration-1 decoration-[#fff] hover:text-[#db4444] hover:decoration-[#db4444]"
+            >
+              ShopNow
+            </a>
+          </p>
+          <details class="group">
+            <summary
+              class="flex items-center md:justify-between gap-2 pt-3 md:p-2 font-medium marker:content-none hover:cursor-pointer"
+            >
+              <span class="flex gap-2">
+                <span> English </span>
+              </span>
+              <img src="./assets/icons/Caret Down.svg" alt="" />
+            </summary>
+          </details>
+        </div>
+      </div>
+    </head>
+    <header
+      class="relative text-black bg-white border-b-2 border-[#b3b3b3] pt-6 pb-4"
+    >
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <h1 class="font-extrabold text-3xl">Exclusive</h1>
+
+        <!-- Desktop Navigation -->
+        <nav class="font-medium">
+          <ul class="hidden lg:flex gap-3 md:gap-5 lg:gap-10">
+            <li><a href="#" class="p-1 border-b-2 text-gray-300">Home</a></li>
+            <li>
+              <a href="#" class="p-1 hover:border-b-2 hover:text-gray-300"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a href="#" class="p-1 hover:border-b-2 hover:text-gray-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#" class="p-1 hover:border-b-2 hover:text-gray-300"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Desktop Search and Icons -->
+        <div class="hidden lg:flex gap-3">
+          <div class="relative bg-[#f5f5f5] px-5 p-2 flex rounded-md flex-1">
+            <input
+              type="text"
+              placeholder="What are you looking for?"
+              class="bg-[#f5f5f5] mr-2 placeholder:text-[#7a7a7a]"
+            />
+            <img src="./assets//icons/search.svg" alt="" />
+          </div>
+
+          <div class="flex gap-2">
+            <img src="./assets//icons/Wishlist.svg" alt="Wishlist" />
+            <img src="./assets//icons/Cart1 with buy.svg" alt="Cart" />
+          </div>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="lg:hidden flex items-center">
+          <button id="menu-button" class="text-black focus:outline-none">
+            <svg
+              class="h-8 w-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav
+        id="mobile-menu"
+        class="lg:hidden hidden w-full bg-white px-4 py-4 shadow-md absolute left-0 top-[78px] z-40"
+      >
+        <ul class="flex flex-col gap-4 text-center">
+          <li>
+            <a href="#" class="block py-2 border-b text-gray-700">Home</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 border-b text-gray-700">Contact</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 border-b text-gray-700">About</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 text-gray-700">Sign Up</a>
+          </li>
+          <li>
+            <div class="flex items-center justify-center gap-3">
+              <div class="relative bg-[#f5f5f5] px-5 p-2 flex rounded-md">
+                <input
+                  type="text"
+                  placeholder="What are you looking for?"
+                  class="bg-[#f5f5f5] mr-2 placeholder:text-[#7a7a7a]"
+                />
+                <img src="./assets//icons/search.svg" alt="" />
+              </div>
+
+              <div class="flex gap-2">
+                <img src="./assets//icons/Wishlist.svg" alt="Wishlist" />
+                <img src="./assets//icons/Cart1 with buy.svg" alt="Cart" />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="bg-white">
+      <div
+        class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-4 text-white"
+      >
+        <!-- Sidebar -->
+        <aside
+          class="lg:col-span-3 bg-white pb-5 pt-6 pr-5 border-b-2 lg:border-b-0 lg:border-r-2 border-[#b3b3b3]"
+        >
+          <ul class="text-lg text-black">
+            <li>
+              <a
+                href="#"
+                class="flex justify-between items-center p-2 hover:text-[#b7b7b7] transition duration-300 group"
+                ><span>Woman’s Fashion</span
+                ><img
+                  src="./assets/icons/drobDown-black.svg"
+                  alt=""
+                  class="-rotate-90 w-3 h-3 group-hover:opacity-40"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex justify-between items-center p-2 hover:text-[#b7b7b7] transition duration-300 group"
+                ><span>Men’s Fashion</span
+                ><img
+                  src="./assets/icons/drobDown-black.svg"
+                  alt=""
+                  class="-rotate-90 w-3 h-3 group-hover:opacity-40"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block p-2 hover:text-[#b7b7b7] transition duration-300"
+                >Electronics</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block p-2 hover:text-[#b7b7b7] transition duration-300"
+                >Home & Lifestyle</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block p-2 hover:text-[#b7b7b7] transition duration-300"
+                >Medicine</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block p-2 hover:text-[#b7b7b7] transition duration-300"
+                >Sports & Outdoor</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block p-2 hover:text-[#b7b7b7] transition duration-300"
+                >Baby’s & Toys</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block p-2 hover:text-[#b7b7b7] transition duration-300"
+                >Groceries & Pets</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block p-2 hover:text-[#b7b7b7] transition duration-300"
+                >Health & Beauty</a
+              >
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="lg:col-span-9 pt-5 pl-0 lg:pl-9">
+          <img
+            src="./assets/images/landing.svg"
+            alt="Landing Image"
+            class="block w-full h-full"
+          />
+        </main>
+      </div>
+    </section>
+
+    <section class="sales with-slider">
+      <div class="container pt-16 pb-12 border-b-2 border-[#f5f5f5]">
+        <div class="flex gap-4">
+          <span class="inline-block rounded-[4px] w-5 h-10 bg-primary"></span>
+          <h6 class="text-primary font-semibold">Today’s</h6>
+        </div>
+
+        <div
+          class="my-6 flex flex-col md:flex-row sm:gap-4 items-center justify-between relative"
+        >
+          <div
+            class="block sm:flex items-center max-md:justify-between w-full md:gap-20 flex-1"
+          >
+            <h2
+              class="text-3xl sm:text-3xl lg:text-4xl font-semibold max-sm:mb-4"
+            >
+              Flash Sales
+            </h2>
+            <div
+              class="counter flex flex-wrap items-center gap-4 justify-center lg:justify-start"
+            >
+              <div class="flex flex-col gap-1 text-center">
+                <span class="text-xs font-medium">Days</span>
+                <span class="text-2xl sm:text-3xl lg:text-[32px] font-bold"
+                  >03</span
+                >
+              </div>
+              <strong class="text-[#e07575] text-3xl sm:text-4xl lg:text-5xl"
+                >:</strong
+              >
+              <div class="flex flex-col gap-1 text-center">
+                <span class="text-xs font-medium">Hours</span>
+                <span class="text-2xl sm:text-3xl font-bold">23</span>
+              </div>
+              <strong class="text-[#e07575] text-3xl sm:text-4xl lg:text-5xl"
+                >:</strong
+              >
+              <div class="flex flex-col gap-1 text-center">
+                <span class="text-xs font-medium">Minutes</span>
+                <span class="text-2xl sm:text-3xl font-bold">19</span>
+              </div>
+              <strong class="text-[#e07575] text-3xl sm:text-4xl lg:text-5xl"
+                >:</strong
+              >
+              <div class="flex flex-col gap-1 text-center">
+                <span class="text-xs font-medium">Seconds</span>
+                <span class="text-2xl sm:text-3xl font-bold">56</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider Controls -->
+          <div
+            class="flex justify-end ml-auto gap-3 pointer-events-none mt-4 lg:mt-0 lg:absolute lg:right-0"
+          >
+            <button
+              id="prev-btn"
+              class="nav-button pointer-events-auto focus:outline-none hover:opacity-60 transition"
+            >
+              <img src="./assets/icons/Fill With Left Arrow.svg" alt="" />
+            </button>
+            <button
+              id="next-btn"
+              class="nav-button pointer-events-auto focus:outline-none hover:opacity-60 transition"
+            >
+              <img src="./assets/icons/Fill with Right Arrow.svg" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Card Slider -->
+        <div class="mb-20">
+          <!-- Slider Container -->
+          <div
+            id="slider-1" 
+            class="slider-container flex overflow-x-auto hide-scrollbar snap-x snap-mandatory"
+          >
+            <div class="flex space-x-6 slider">
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img src="./assets/images/sales1.svg" alt="" />
+                  </div>
+
+                  <span
+                    class="text-white bg-primary py-1 px-3 rounded absolute left-5 top-5"
+                    >-40%</span
+                  >
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+
+                  <button
+                    class="translate-y-12 group-hover:-translate-y-0 transition duration-200 w-full py-3 bg-black text-white absolute left-0 bottom-0 font-medium"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    HAVIT HV-G92 Gamepad
+                  </h5>
+                  <div class="flex gap-3 font-medium mb-2">
+                    <span class="text-primary">$120</span>
+                    <s class="text-[#7f7f7f]">$160</s>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(88)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img src="./assets/images/sales2.svg" alt="" />
+                  </div>
+
+                  <span
+                    class="text-white bg-primary py-1 px-3 rounded absolute left-5 top-5"
+                    >-35%</span
+                  >
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+
+                  <button
+                    class="translate-y-12 group-hover:-translate-y-0 transition duration-200 w-full py-3 bg-black text-white absolute left-0 bottom-0 font-medium"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    AK-900 Wired Keyboard
+                  </h5>
+                  <div class="flex gap-3 font-medium mb-2">
+                    <span class="text-primary">$120</span>
+                    <s class="text-[#7f7f7f]">$160</s>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGray.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(75)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img src="./assets/images/sales3.svg" alt="" />
+                  </div>
+
+                  <span
+                    class="text-white bg-primary py-1 px-3 rounded absolute left-5 top-5"
+                    >-30%</span
+                  >
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+
+                  <button
+                    class="translate-y-12 group-hover:-translate-y-0 transition duration-200 w-full py-3 bg-black text-white absolute left-0 bottom-0 font-medium"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    IPS LCD Gaming Monitor
+                  </h5>
+                  <div class="flex gap-3 font-medium mb-2">
+                    <span class="text-primary">$120</span>
+                    <s class="text-[#7f7f7f]">$160</s>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(99)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img src="./assets/images/sales4.svg" alt="" />
+                  </div>
+
+                  <span
+                    class="text-white bg-primary py-1 px-3 rounded absolute left-5 top-5"
+                    >-25%</span
+                  >
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+
+                  <button
+                    class="translate-y-12 group-hover:-translate-y-0 transition duration-200 w-full py-3 bg-black text-white absolute left-0 bottom-0 font-medium"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    S-Series Comfort Chair
+                  </h5>
+                  <div class="flex gap-3 font-medium mb-2">
+                    <span class="text-primary">$120</span>
+                    <s class="text-[#7f7f7f]">$160</s>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(88)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img src="./assets/images/sales1.svg" alt="" />
+                  </div>
+
+                  <span
+                    class="text-white bg-primary py-1 px-3 rounded absolute left-5 top-5"
+                    >-40%</span
+                  >
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+
+                  <button
+                    class="translate-y-12 group-hover:-translate-y-0 transition duration-200 w-full py-3 bg-black text-white absolute left-0 bottom-0 font-medium"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    HAVIT HV-G92 Gamepad
+                  </h5>
+                  <div class="flex gap-3 font-medium mb-2">
+                    <span class="text-primary">$120</span>
+                    <s class="text-[#7f7f7f]">$160</s>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(88)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img src="./assets/images/sales1.svg" alt="" />
+                  </div>
+
+                  <span
+                    class="text-white bg-primary py-1 px-3 rounded absolute left-5 top-5"
+                    >-40%</span
+                  >
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+
+                  <button
+                    class="translate-y-12 group-hover:-translate-y-0 transition duration-200 w-full py-3 bg-black text-white absolute left-0 bottom-0 font-medium"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    HAVIT HV-G92 Gamepad
+                  </h5>
+                  <div class="flex gap-3 font-medium mb-2">
+                    <span class="text-primary">$120</span>
+                    <s class="text-[#7f7f7f]">$160</s>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(88)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img src="./assets/images/sales1.svg" alt="" />
+                  </div>
+
+                  <span
+                    class="text-white bg-primary py-1 px-3 rounded absolute left-5 top-5"
+                    >-40%</span
+                  >
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+
+                  <button
+                    class="translate-y-12 group-hover:-translate-y-0 transition duration-200 w-full py-3 bg-black text-white absolute left-0 bottom-0 font-medium"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    HAVIT HV-G92 Gamepad
+                  </h5>
+                  <div class="flex gap-3 font-medium mb-2">
+                    <span class="text-primary">$120</span>
+                    <s class="text-[#7f7f7f]">$160</s>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(88)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="block bg-primary text-white font-medium py-4 px-12 rounded mx-auto transition duration-300 hover:opacity-40"
+        >
+          View All Products
+        </button>
+      </div>
+    </section>
+
+    <section class="categories with-slider">
+      <div class="container pt-16 pb-12 border-b-2 border-[#f5f5f5]">
+        <div class="flex gap-4">
+          <span class="inline-block rounded-[4px] w-5 h-10 bg-primary"></span>
+          <h6 class="text-primary font-semibold">Categories</h6>
+        </div>
+
+        <div
+          class="mb-6 mt-4 block md:flex justify-between items-center relative"
+        >
+          <h4 class="max-sm:text-3xl text-4xl font-semibold max-sm:mb-4">
+            Browse By Category
+          </h4>
+          <div
+            class="flex items-center max-md:justify-end gap-3 pointer-events-none"
+          >
+            <button
+              id="prev-btn"
+              class="nav-button pointer-events-auto focus:outline-none hover:opacity-60 duration-200 transition"
+            >
+              <img src="./assets/icons/Fill With Left Arrow.svg" alt="" />
+            </button>
+            <button
+              id="next-btn"
+              class="nav-button pointer-events-auto focus:outline-none hover:opacity-60 duration-200 transition"
+            >
+              <img src="./assets/icons/Fill with Right Arrow.svg" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="mb-10 ">
+          <div
+            id="slider-2"
+            class="slider-container flex overflow-x-auto hide-scrollbar snap-x snap-mandatory"
+          >
+            <div class="flex space-x-6 slider">
+              <div
+                class="card flex-none w-[185px] h-[175px] snap-center relative flex flex-col gap-3 border justify-center items-center overflow-hidden rounded bg-white group hover:bg-primary transition duration-300 cursor-pointer"
+              >
+                <img
+                  src="./assets/images/category1.svg"
+                  alt=""
+                  class="group-hover:invert"
+                />
+                <span class="group-hover:text-white">Phones</span>
+              </div>
+              <div
+                class="card flex-none w-[185px] h-[175px] snap-center relative flex flex-col gap-3 border justify-center items-center overflow-hidden rounded bg-white group hover:bg-primary transition duration-300 cursor-pointer"
+              >
+                <img
+                  src="./assets/images/category2.svg"
+                  alt=""
+                  class="group-hover:invert"
+                />
+                <span class="group-hover:text-white">Computers</span>
+              </div>
+              <div
+                class="card flex-none w-[185px] h-[175px] snap-center relative flex flex-col gap-3 border justify-center items-center overflow-hidden rounded bg-white group hover:bg-primary transition duration-300 cursor-pointer"
+              >
+                <img
+                  src="./assets/images/category3.svg"
+                  alt=""
+                  class="group-hover:invert"
+                />
+                <span class="group-hover:text-white">SmartWatch</span>
+              </div>
+              <div
+                class="card flex-none w-[185px] h-[175px] snap-center relative flex flex-col gap-3 border justify-center items-center overflow-hidden rounded bg-white group hover:bg-primary transition duration-300 cursor-pointer"
+              >
+                <img
+                  src="./assets/images/category4.svg"
+                  alt=""
+                  class="group-hover:invert-0 invert"
+                />
+                <span class="group-hover:text-white">Camera</span>
+              </div>
+              <div
+                class="card flex-none w-[185px] h-[175px] snap-center relative flex flex-col gap-3 border justify-center items-center overflow-hidden rounded bg-white group hover:bg-primary transition duration-300 cursor-pointer"
+              >
+                <img
+                  src="./assets/images/category5.svg"
+                  alt=""
+                  class="group-hover:invert"
+                />
+                <span class="group-hover:text-white">HeadPhones</span>
+              </div>
+              <div
+                class="card flex-none w-[185px] h-[175px] snap-center relative flex flex-col gap-3 border justify-center items-center overflow-hidden rounded bg-white group hover:bg-primary transition duration-300 cursor-pointer"
+              >
+                <img
+                  src="./assets/images/category6.svg"
+                  alt=""
+                  class="group-hover:invert"
+                />
+                <span class="group-hover:text-white">Gaming</span>
+              </div>
+              <div
+                class="card flex-none w-[185px] h-[175px] snap-center relative flex flex-col gap-3 border justify-center items-center overflow-hidden rounded bg-white group hover:bg-primary transition duration-300 cursor-pointer"
+              >
+                <img
+                  src="./assets/images/category1.svg"
+                  alt=""
+                  class="group-hover:invert"
+                />
+                <span class="group-hover:text-white">Phones</span>
+              </div>
+              <div
+                class="card flex-none w-[185px] h-[175px] snap-center relative flex flex-col gap-3 border justify-center items-center overflow-hidden rounded bg-white group hover:bg-primary transition duration-300 cursor-pointer"
+              >
+                <img
+                  src="./assets/images/category2.svg"
+                  alt=""
+                  class="group-hover:invert"
+                />
+                <span class="group-hover:text-white">Computers</span>
+              </div>
+              <div
+                class="card flex-none w-[185px] h-[175px] snap-center relative flex flex-col gap-3 border justify-center items-center overflow-hidden rounded bg-white group hover:bg-primary transition duration-300 cursor-pointer"
+              >
+                <img
+                  src="./assets/images/category3.svg"
+                  alt=""
+                  class="group-hover:invert"
+                />
+                <span class="group-hover:text-white">SmartWatch</span>
+              </div>
+              <div
+                class="card flex-none w-[185px] h-[175px] snap-center relative flex flex-col gap-3 border justify-center items-center overflow-hidden rounded bg-white group hover:bg-primary transition duration-300 cursor-pointer"
+              >
+                <img
+                  src="./assets/images/category4.svg"
+                  alt=""
+                  class="group-hover:invert"
+                />
+                <span class="group-hover:text-white">Camera</span>
+              </div>
+              <div
+                class="card flex-none w-[185px] h-[175px] snap-center relative flex flex-col gap-3 border justify-center items-center overflow-hidden rounded bg-white group hover:bg-primary transition duration-300 cursor-pointer"
+              >
+                <img
+                  src="./assets/images/category6.svg"
+                  alt=""
+                  class="group-hover:invert"
+                />
+                <span class="group-hover:text-white">HeadPhones</span>
+              </div>
+              <div
+                class="card flex-none w-[185px] h-[175px] snap-center relative flex flex-col gap-3 border justify-center items-center overflow-hidden rounded bg-white group hover:bg-primary transition duration-300 cursor-pointer"
+              >
+                <img
+                  src="./assets/images/category6.svg"
+                  alt=""
+                  class="group-hover:invert"
+                />
+                <span class="group-hover:text-white">Gaming</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container pt-16 pb-12">
+        <div class="flex gap-4">
+          <span class="inline-block rounded-[4px] w-5 h-10 bg-primary"></span>
+          <h6 class="text-primary font-semibold">This Month</h6>
+        </div>
+        <div
+          class="mb-6 mt-4 block md:flex justify-between items-center relative"
+        >
+          <h2 class="max-sm:text-3xl text-4xl font-semibold max-sm:mb-4">
+            Best Selling Products
+          </h2>
+
+          <button
+            class="block max-md:w-full bg-primary text-white font-medium py-4 px-12 rounded transition duration-300 hover:opacity-40"
+          >
+            View All
+          </button>
+        </div>
+
+        <!-- Card Slider -->
+        <div class="mb-20">
+          <div
+            id="slider-3"
+            class="slider-container flex overflow-x-auto hide-scrollbar snap-x snap-mandatory"
+          >
+            <div class="flex space-x-6 slider">
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img src="./assets/images/products1.svg" alt="" />
+                  </div>
+
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">The north coat</h5>
+                  <span class="text-primary font-medium mb-2 block">$120</span>
+
+                  <div class="flex gap-2 items-center">
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li>
+                        <img src="./assets/icons/star-half-filled.svg" alt="" />
+                      </li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(88)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img src="./assets/images/products2.svg" alt="" />
+                  </div>
+
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">Gucci duffle bag</h5>
+                  <span class="text-primary font-medium mb-2 block">$120</span>
+
+                  <div class="flex gap-2 items-center">
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGray.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(75)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img src="./assets/images/products3.svg" alt="" />
+                  </div>
+
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    RGB liquid CPU Cooler
+                  </h5>
+                  <span class="text-primary font-medium mb-2 block">$120</span>
+
+                  <div class="flex gap-2 items-center">
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li>
+                        <img src="./assets/icons/star-half-filled.svg" alt="" />
+                      </li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(66)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img src="./assets/images/products4.svg" alt="" />
+                  </div>
+
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">Small BookSelf</h5>
+                  <span class="text-primary font-medium mb-2 block">$120</span>
+
+                  <div class="flex gap-2 items-center">
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(88)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <img src="./assets/images/section.svg" alt="" />
+      </div>
+    </section>
+
+    <section class="explore-our-products with-slider">
+      <div class="container pt-16 pb-12">
+        <div class="flex gap-4">
+          <span class="inline-block rounded-[4px] w-5 h-10 bg-primary"></span>
+          <h6 class="text-primary font-semibold">Our Products</h6>
+        </div>
+        <div class="my-6 block md:flex justify-between items-center relative">
+          <h4 class="max-sm:text-3xl max-sm:mb-2 text-4xl font-semibold flex-1">
+            Explore Our Products
+          </h4>
+          <div
+            class="flex items-center max-md:justify-end gap-3 pointer-events-none"
+          >
+            <button
+              id="prev-btn"
+              class="nav-button pointer-events-auto focus:outline-none hover:opacity-60 duration-200 transition"
+            >
+              <img src="./assets/icons/Fill With Left Arrow.svg" alt="" />
+            </button>
+            <button
+              id="next-btn"
+              class="nav-button pointer-events-auto focus:outline-none hover:opacity-60 duration-200 transition"
+            >
+              <img src="./assets/icons/Fill with Right Arrow.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="mb-20">
+          <div
+            id="slider-4"
+            class="slider-container flex overflow-x-auto hide-scrollbar snap-x snap-mandatory"
+          >
+            <div class="flex space-x-6 slider">
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img
+                      src="./assets/images/Explore Our Products1.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+
+                  <button
+                    class="translate-y-12 group-hover:-translate-y-0 transition duration-200 w-full py-3 bg-black text-white absolute left-0 bottom-0 font-medium"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    Breed Dry Dog Food
+                  </h5>
+
+                  <div class="flex gap-2 items-center">
+                    <span class="text-primary font-medium">$120</span>
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGray.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGray.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(88)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img
+                      src="./assets/images/Explore Our Products2.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+
+                  <button
+                    class="translate-y-12 group-hover:-translate-y-0 transition duration-200 w-full py-3 bg-black text-white absolute left-0 bottom-0 font-medium"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    CANON EOS DSLR Camera
+                  </h5>
+
+                  <div class="flex gap-2 items-center">
+                    <span class="text-primary font-medium">$120</span>
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGray.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(75)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img
+                      src="./assets/images/Explore Our Products3.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+
+                  <button
+                    class="translate-y-12 group-hover:-translate-y-0 transition duration-200 w-full py-3 bg-black text-white absolute left-0 bottom-0 font-medium"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    ASUS FHD Gaming Laptop
+                  </h5>
+
+                  <div class="flex gap-2 items-center">
+                    <span class="text-primary font-medium">$160</span>
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(99)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img
+                      src="./assets/images/Explore Our Products4.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+
+                  <button
+                    class="translate-y-12 group-hover:-translate-y-0 transition duration-200 w-full py-3 bg-black text-white absolute left-0 bottom-0 font-medium"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    Curology Product Set
+                  </h5>
+
+                  <div class="flex gap-2 items-center">
+                    <span class="text-primary font-medium">$120</span>
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(88)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img
+                      src="./assets/images/Explore Our Products1.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+
+                  <button
+                    class="translate-y-12 group-hover:-translate-y-0 transition duration-200 w-full py-3 bg-black text-white absolute left-0 bottom-0 font-medium"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    Breed Dry Dog Food
+                  </h5>
+
+                  <div class="flex gap-2 items-center">
+                    <span class="text-primary font-medium">$120</span>
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGray.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGray.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(88)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img
+                      src="./assets/images/Explore Our Products2.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+
+                  <button
+                    class="translate-y-12 group-hover:-translate-y-0 transition duration-200 w-full py-3 bg-black text-white absolute left-0 bottom-0 font-medium"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    CANON EOS DSLR Camera
+                  </h5>
+
+                  <div class="flex gap-2 items-center">
+                    <span class="text-primary font-medium">$120</span>
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGray.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(75)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img
+                      src="./assets/images/Explore Our Products3.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+
+                  <button
+                    class="translate-y-12 group-hover:-translate-y-0 transition duration-200 w-full py-3 bg-black text-white absolute left-0 bottom-0 font-medium"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    ASUS FHD Gaming Laptop
+                  </h5>
+
+                  <div class="flex gap-2 items-center">
+                    <span class="text-primary font-medium">$160</span>
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(99)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img
+                      src="./assets/images/Explore Our Products4.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+
+                  <button
+                    class="translate-y-12 group-hover:-translate-y-0 transition duration-200 w-full py-3 bg-black text-white absolute left-0 bottom-0 font-medium"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    Curology Product Set
+                  </h5>
+
+                  <div class="flex gap-2 items-center">
+                    <span class="text-primary font-medium">$120</span>
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(88)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img
+                      src="./assets/images/Explore Our Products1.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+
+                  <button
+                    class="translate-y-12 group-hover:-translate-y-0 transition duration-200 w-full py-3 bg-black text-white absolute left-0 bottom-0 font-medium"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    Breed Dry Dog Food
+                  </h5>
+
+                  <div class="flex gap-2 items-center">
+                    <span class="text-primary font-medium">$120</span>
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGray.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGray.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(88)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img
+                      src="./assets/images/Explore Our Products2.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+
+                  <button
+                    class="translate-y-12 group-hover:-translate-y-0 transition duration-200 w-full py-3 bg-black text-white absolute left-0 bottom-0 font-medium"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    CANON EOS DSLR Camera
+                  </h5>
+
+                  <div class="flex gap-2 items-center">
+                    <span class="text-primary font-medium">$120</span>
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGray.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(75)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img
+                      src="./assets/images/Explore Our Products3.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+
+                  <button
+                    class="translate-y-12 group-hover:-translate-y-0 transition duration-200 w-full py-3 bg-black text-white absolute left-0 bottom-0 font-medium"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    ASUS FHD Gaming Laptop
+                  </h5>
+
+                  <div class="flex gap-2 items-center">
+                    <span class="text-primary font-medium">$160</span>
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(99)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img
+                      src="./assets/images/Explore Our Products4.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+
+                  <button
+                    class="translate-y-12 group-hover:-translate-y-0 transition duration-200 w-full py-3 bg-black text-white absolute left-0 bottom-0 font-medium"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    Curology Product Set
+                  </h5>
+
+                  <div class="flex gap-2 items-center">
+                    <span class="text-primary font-medium">$120</span>
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(88)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-20">
+          <div
+            id="slider-5"
+            class="slider-container flex overflow-x-auto hide-scrollbar snap-x snap-mandatory"
+          >
+            <div class="flex space-x-6 slider">
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img
+                      src="./assets/images/Explore Our Products5.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+                  <span
+                    class="text-white bg-[#00ff66] py-1 px-3 rounded absolute left-5 top-5"
+                    >New</span
+                  >
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">Kids Electric Car</h5>
+                  <div class="flex gap-2 items-center">
+                    <span class="text-primary font-medium">$960</span>
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(88)</span>
+                  </div>
+                  <div class="flex items-center gap-2 mt-3 ml-1">
+                    <div
+                      class="w-4 h-4 rounded-full bg-[#fb1314] border-2 border-white outline flex items-center justify-center"
+                    ></div>
+
+                    <div class="w-5 h-5 rounded-full bg-primary"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img
+                      src="./assets/images/Explore Our Products6.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+                  <span
+                    class="text-white bg-[#00ff66] py-1 px-3 rounded absolute left-5 top-5"
+                    >New</span
+                  >
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    Jr. Zoom Soccer Cleats
+                  </h5>
+                  <div class="flex gap-2 items-center">
+                    <span class="text-primary font-medium">$1160</span>
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(75)</span>
+                  </div>
+
+                  <div class="flex items-center gap-2 mt-3 ml-0.5">
+                    <div
+                      class="w-4 h-4 rounded-full bg-yellow-300 border-2 border-white outline flex items-center justify-center"
+                    ></div>
+
+                    <div class="w-5 h-5 rounded-full bg-primary"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img
+                      src="./assets/images/Explore Our Products7.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+                  <span
+                    class="text-white bg-[#00ff66] py-1 px-3 rounded absolute left-5 top-5"
+                    >New</span
+                  >
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    GP11 Shooter USB Gamepad
+                  </h5>
+
+                  <div class="flex gap-2 items-center">
+                    <span class="text-primary font-medium">$660</span>
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(99)</span>
+                  </div>
+                  <div class="flex items-center gap-2 mt-3 ml-1">
+                    <div
+                      class="w-4 h-4 rounded-full bg-black border-2 border-white outline flex items-center justify-center"
+                    ></div>
+
+                    <div class="w-5 h-5 rounded-full bg-primary"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-none w-[290px] bg-white snap-center">
+                <div
+                  class="relative h-64 flex item justify-center overflow-hidden rounded bg-[#f5f5f5] group"
+                >
+                  <div class="flex justify-center items-center">
+                    <img
+                      src="./assets/images/Explore Our Products8.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="absolute right-5 top-5">
+                    <img
+                      src="./assets/icons/Fill Eye.svg"
+                      alt=""
+                      class="mb-2"
+                    />
+                    <img src="./assets/icons/Fill Heart.svg" alt="" />
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h5 class="mb-2 text-black font-medium">
+                    Quilted Satin Jacket
+                  </h5>
+
+                  <div class="flex gap-2 items-center">
+                    <span class="text-primary font-medium">$660</span>
+                    <ul class="icons flex ga-1">
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                      <li><img src="./assets/icons/starGold.svg" alt="" /></li>
+                    </ul>
+                    <span class="text-[#7f7f7f] font-semibold">(99)</span>
+                  </div>
+                  <div class="flex items-center gap-2 mt-3 ml-1">
+                    <div
+                      class="w-4 h-4 rounded-full bg-[#184a48] border-2 border-white outline flex items-center justify-center"
+                    ></div>
+
+                    <div class="w-5 h-5 rounded-full bg-primary"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="block bg-primary text-white font-medium py-4 px-12 rounded mx-auto transition duration-300 hover:opacity-40"
+        >
+          View All Products
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <div class="container pt-16 pb-12">
+        <div class="flex gap-4">
+          <span class="inline-block rounded-[4px] w-5 h-10 bg-primary"></span>
+          <h6 class="text-primary font-semibold">Featured</h6>
+        </div>
+        <div class="my-6 flex items-center justify-between relative">
+          <h4 class="text-4xl font-semibold flex-1">New Arrival</h4>
+        </div>
+
+        <div class="my-8 flex max-lg:flex-col gap-8">
+          <div
+            class="flex-1 relative flex justify-end items-center rounded-lg overflow-hidden"
+          >
+            <img
+              src="./assets/images/Featured.svg"
+              alt=""
+              class="bg-black block w-full h-full"
+            />
+            <div class="absolute left-4 bottom-4 text-white w-[240px]">
+              <h6 class="font-bold text-2xl">PlayStation 5</h6>
+
+              <p class="font-normal text-sm my-2">
+                Black and White version of the PS5 coming out on sale.
+              </p>
+
+              <a
+                href="#"
+                class="underline decoration-[0.5px] decoration-white font-medium"
+                >Shop Now</a
+              >
+            </div>
+          </div>
+
+          <div class="flex-1 flex flex-col gap-8">
+            <div class="flex-1 relative rounded-lg overflow-hidden">
+              <img
+                src="./assets/images/Featured2.svg"
+                alt=""
+                class="block w-full h-full bg-black"
+              />
+              <div class="absolute left-4 bottom-4 text-white w-[240px]">
+                <h6 class="font-bold text-2xl">Women’s Collections</h6>
+
+                <p class="font-normal text-sm my-2">
+                  Featured woman collections that give you another vibe.
+                </p>
+
+                <a
+                  href="#"
+                  class="underline decoration-[0.5px] decoration-white font-medium"
+                  >Shop Now</a
+                >
+              </div>
+            </div>
+
+            <div class="flex-1 flex max-sm:flex-col gap-8">
+              <div
+                class="flex-1 relative p-5 rounded-lg overflow-hidden bg-black"
+              >
+                <img
+                  src="./assets/images/Featured3.svg"
+                  alt=""
+                  class="flex justify-center items-center mx-auto w-3/4 h-3/4"
+                />
+                <div class="absolute left-4 bottom-4 text-white w-[240px]">
+                  <h6 class="font-bold text-2xl">Speakers</h6>
+
+                  <p class="font-normal text-sm my-2">
+                    Amazon wireless speakers
+                  </p>
+
+                  <a
+                    href="#"
+                    class="underline decoration-[0.5px] decoration-white font-medium"
+                    >Shop Now</a
+                  >
+                </div>
+              </div>
+
+              <div
+                class="flex-1 relative p-5 rounded-lg overflow-hidden bg-black"
+              >
+                <img
+                  src="./assets/images/Featured4.svg"
+                  alt=""
+                  class="flex justify-center items-center mx-auto w-3/4 h-3/4"
+                />
+                <div class="absolute left-4 bottom-4 text-white w-[240px]">
+                  <h6 class="font-bold text-2xl">Perfume</h6>
+
+                  <p class="font-normal text-sm my-2">GUCCI INTENSE OUD EDP</p>
+
+                  <a
+                    href="#"
+                    class="underline decoration-[0.5px] decoration-white font-medium"
+                    >Shop Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container pt-20 pb-28 relative">
+        <div
+          class="md:mx-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+        >
+          <div class="text-center">
+            <div
+              class="p-3.5 bg-[#c1c1c1] w-fit rounded-full text-center mx-auto mb-5"
+            >
+              <img
+                src="./assets/icons/icon-delivery.svg"
+                alt=""
+                class="block p-2.5 rounded-full bg-black"
+              />
+            </div>
+            <h3 class="font-semibold text-xl uppercase mb-2">
+              FREE AND FAST DELIVERY
+            </h3>
+            <p class="font-normal text-sm">
+              Free delivery for all orders over $140
+            </p>
+          </div>
+          <div class="text-center">
+            <div
+              class="p-3.5 bg-[#c1c1c1] w-fit rounded-full text-center mx-auto mb-5"
+            >
+              <img
+                src="./assets/icons/Icon-Customer service.svg"
+                alt=""
+                class="block p-2.5 rounded-full bg-black"
+              />
+            </div>
+            <h3 class="font-semibold text-xl uppercase mb-2">
+              24/7 CUSTOMER SERVICE
+            </h3>
+            <p class="font-normal text-sm">Friendly 24/7 customer support</p>
+          </div>
+          <div class="text-center">
+            <div
+              class="p-3.5 bg-[#c1c1c1] w-fit rounded-full text-center mx-auto mb-5"
+            >
+              <img
+                src="./assets/icons/Icon-secure.svg"
+                alt=""
+                class="block p-2.5 rounded-full bg-black"
+              />
+            </div>
+            <h3 class="font-semibold text-xl uppercase mb-2">
+              MONEY BACK GUARANTEE
+            </h3>
+            <p class="font-normal text-sm">We reurn money within 30 days</p>
+          </div>
+        </div>
+        <img
+          src="./assets/icons/Fill With Left Arrow.svg"
+          alt=""
+          class="rotate-90 absolute right-0 bottom-4"
+        />
+      </div>
+    </section>
+
+    <footer class="bg-black pt-16 pb-12 text-white">
+      <div class="container">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-11 pb-10 text-sm"
+        >
+          <!-- Column 1 -->
+          <div>
+            <h4 class="font-bold text-3xl mb-6">Exclusive</h4>
+            <span class="font-medium text-xl mb-5 block">Subscribe</span>
+            <div>
+              <small class="font-normal mb-3 block"
+                >Get 10% off your first order</small
+              >
+              <div
+                class="relative bg-transparent px-5 py-3 flex items-center rounded-md border border-white w-full"
+              >
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  class="bg-transparent mr-2 placeholder:text-[#7a7a7a]"
+                />
+                <img
+                  src="./assets//icons/send.svg"
+                  alt=""
+                  class="absolute right-2"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div>
+            <h4 class="font-bold text-3xl mb-6">Support</h4>
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="hover:text-secondary transition"
+                  >111 Bijoy sarani, Dhaka,<br />
+                  DH 1515, Bangladesh.</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-secondary transition"
+                  >exclusive@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-secondary transition"
+                  >+88015-88888-9999</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 3 -->
+          <div>
+            <h4 class="font-bold text-3xl mb-6">Account</h4>
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="hover:text-secondary transition"
+                  >My Account</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-secondary transition"
+                  >Login / Register</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-secondary transition">Cart</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-secondary transition">Wishlist</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-secondary transition">Shop</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 4 -->
+          <div>
+            <h4 class="font-bold text-3xl mb-6">Quick Link</h4>
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="hover:text-secondary transition"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-secondary transition"
+                  >Terms Of Use</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-secondary transition">FAQ</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-secondary transition">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Column 5 -->
+          <div>
+            <h4 class="font-bold text-3xl mb-6">Download App</h4>
+            <div>
+              <small class="font-medium mb-2 block text-xs text-[#7a7a7a]"
+                >Save $3 with App New User Only</small
+              >
+              <div class="flex items-center gap-2">
+                <img
+                  src="./assets/images/Qr Code.svg"
+                  alt=""
+                  class="block w-full flex-1"
+                />
+                <div class="flex flex-col gap-5 flex-1">
+                  <img
+                    src="./assets/images/AppStore.svg"
+                    alt=""
+                    class="block flex-1"
+                  />
+                  <img
+                    src="./assets/images/google-play-app-store-android-wallets-text-label-logo.svg"
+                    alt=""
+                    class="block flex-1"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <ul class="flex justify-between mt-6">
+              <li>
+                <a href="#"><img src="./assets/icons/faceBook.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./assets/icons/twitter.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./assets/icons/instagram.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./assets/icons/linkedin.svg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom Row -->
+      <div class="pt-4 text-center text-sm border-t-[0.5px] border-[#141414]">
+        <p class="text-[#3d3d3d] font-">
+          &copy; Copyright Rimel 2022. All right reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
